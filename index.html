@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acceleratos — Политика конфиденциальности / Privacy Policy</title>
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#111214" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F2ED" media="(prefers-color-scheme: light)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #111214; --ink: #F0EFEC; --dim: rgba(240,239,236,.66); --faint: rgba(240,239,236,.5);
+    --line: rgba(255,255,255,.14); --track: rgba(255,255,255,.1); --accent: #F97316;
+    --chip-bg: #F0EFEC; --chip-ink: #111214; --card: rgba(255,255,255,.035);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #F4F2ED; --ink: #16181A; --dim: rgba(22,24,26,.68); --faint: rgba(22,24,26,.52);
+      --line: rgba(0,0,0,.12); --track: rgba(0,0,0,.1); --accent: #C2410C;
+      --chip-bg: #16181A; --chip-ink: #F4F2ED; --card: rgba(0,0,0,.03);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  .ff { font-family: "Chakra Petch", system-ui, sans-serif; }
+
+  /* Hero */
+  .hero { max-width: 1160px; margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) 22px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  .brand span { font: 700 17px/1 "Chakra Petch", system-ui, sans-serif; letter-spacing: .12em; }
+  .hero-body { display: flex; align-items: flex-end; justify-content: space-between; gap: 28px; padding: 48px 0 34px; border-bottom: 1px solid var(--line); }
+  .eyebrow { font: 700 11px/1 "Chakra Petch", system-ui, sans-serif; letter-spacing: .22em; color: var(--accent); margin: 0 0 14px; }
+  h1 { font: 700 clamp(32px, 6vw, 60px)/1.02 "Chakra Petch", system-ui, sans-serif; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+  .meta { font: 600 13px/1.5 "Chakra Petch", system-ui, sans-serif; letter-spacing: .04em; color: var(--dim); margin: 14px 0 0; }
+  .hero-arc { width: 220px; flex: none; }
+  .hero-arc path { fill: none; stroke-width: 14; }
+
+  /* Layout */
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 22px 80px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+  aside { position: sticky; top: 0; z-index: 5; background: var(--bg); margin: 0 -22px; padding: 12px 22px; border-bottom: 1px solid var(--line); }
+  .chips { display: flex; gap: 8px; }
+  .chip { font: 700 13px/1 "Chakra Petch", system-ui, sans-serif; padding: 11px 18px; border-radius: 999px; border: 1px solid var(--line); color: var(--dim); text-decoration: none; white-space: nowrap; }
+  .chip:hover { color: var(--ink); text-decoration: none; }
+  .chip[aria-current="true"] { background: var(--chip-bg); color: var(--chip-ink); border-color: transparent; }
+  .toc { display: none; }
+  main { min-width: 0; max-width: 720px; }
+
+  /* Content */
+  section { counter-reset: h2; }
+  section > p:first-of-type { margin-top: 32px; }
+  section > h2:first-child { margin-top: 40px; }
+  #ru > h2:first-child { font: 700 clamp(28px, 4.6vw, 44px)/1.05 "Chakra Petch", system-ui, sans-serif; letter-spacing: -.02em; text-transform: none; padding: 0; border: 0; margin: 56px 0 0; }
+  #ru > h2:first-child::before { content: none; }
+  #ru > .meta { margin-bottom: 8px; }
+  h2 {
+    counter-increment: h2;
+    font: 700 15px/1.3 "Chakra Petch", system-ui, sans-serif; letter-spacing: .14em;
+    margin: 52px 0 18px; padding-top: 22px; border-top: 1px solid var(--line);
+    display: flex; gap: 14px; align-items: baseline; scroll-margin-top: 80px;
+  }
+  h2::before { content: counter(h2, decimal-leading-zero); color: var(--accent); letter-spacing: .04em; flex: none; }
+  h3 { font: 700 17px/1.3 "Chakra Petch", system-ui, sans-serif; letter-spacing: .01em; margin: 26px 0 6px; }
+  p { margin: 0 0 14px; color: var(--ink); text-wrap: pretty; }
+  ol { list-style: none; counter-reset: li; margin: 6px 0 18px; padding: 0; border-top: 1px solid var(--line); }
+  ol li { counter-increment: li; display: grid; grid-template-columns: 34px minmax(0,1fr); gap: 10px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  ol li::before { content: counter(li); font: 700 24px/1.1 "Chakra Petch", system-ui, sans-serif; color: var(--accent); }
+  hr { border: 0; height: 0; margin: 72px 0 0; }
+
+  /* Safety section gets the card treatment users know from the first-run screen */
+  .note { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 4px 18px 6px; margin: 6px 0 18px; }
+  .note ol { border-top: 0; margin: 0; }
+  .note ol li:last-child { border-bottom: 0; }
+
+  footer { max-width: 1160px; margin: 0 auto; padding: 28px 22px max(40px, env(safe-area-inset-bottom)); border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font: 600 12px/1.4 "Chakra Petch", system-ui, sans-serif; letter-spacing: .08em; color: var(--faint); }
+  footer a { color: var(--faint); }
+
+  @media (max-width: 640px) {
+    .hero-arc { display: none; }
+    .hero-body { padding: 34px 0 26px; }
+    body { font-size: 16px; }
+    h2 { margin-top: 44px; }
+  }
+
+  @media (min-width: 1000px) {
+    .wrap { grid-template-columns: 240px minmax(0, 1fr); gap: 72px; }
+    aside { margin: 0; padding: 40px 0 0; border: 0; align-self: start; max-height: 100vh; overflow-y: auto; }
+    .toc { display: block; margin-top: 30px; }
+    .toc-title { font: 700 10.5px/1 "Chakra Petch", system-ui, sans-serif; letter-spacing: .2em; color: var(--faint); margin: 0 0 10px; }
+    .toc ol { border-top: 1px solid var(--line); margin: 0; }
+    .toc li { display: block; padding: 0; border-bottom: 1px solid var(--line); }
+    .toc li::before { content: none; }
+    .toc a { display: flex; gap: 10px; padding: 10px 0; font: 600 12.5px/1.35 "Chakra Petch", system-ui, sans-serif; letter-spacing: .03em; color: var(--dim); text-decoration: none; }
+    .toc a span { color: var(--faint); flex: none; }
+    .toc a:hover, .toc a[aria-current="true"] { color: var(--ink); }
+    .toc a[aria-current="true"] span { color: var(--accent); }
+  }
+
+  @media print {
+    aside, .hero-arc { display: none; }
+    .wrap { display: block; }
+    body { background: #fff; color: #000; }
+  }
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="brand">
+    <svg viewBox="0 0 1024 1024" aria-hidden="true">
+      <rect width="1024" height="1024" fill="#0A0A0B"></rect>
+      <path d="M172 600 A340 340 0 0 1 852 600" fill="none" stroke="#26262A" stroke-width="64" stroke-linecap="round"></path>
+      <path d="M172 600 A340 340 0 0 1 852 600" fill="none" stroke="#F97316" stroke-width="64" stroke-linecap="round" stroke-dasharray="1068.14" stroke-dashoffset="356.05"></path>
+      <text x="512" y="675" text-anchor="middle" font-family="Chakra Petch, system-ui, sans-serif" font-weight="700" font-size="242" fill="#F0EFEC">A</text>
+    </svg>
+    <span>ACCELERATOS</span>
+  </div>
+  <div class="hero-body">
+    <div>
+      <p class="eyebrow">DOCUMENT</p>
+      <h1>PRIVACY POLICY</h1>
+      <p class="meta">Acceleratos · Effective date: October 27, 2026</p>
+    </div>
+    <svg class="hero-arc" viewBox="0 0 340 196" aria-hidden="true">
+      <path d="M28 186 A142 142 0 0 1 312 186" style="stroke: var(--track)"></path>
+      <path d="M28 186 A142 142 0 0 1 312 186" stroke-linecap="round" stroke-dasharray="446.1" stroke-dashoffset="148.7" style="stroke: var(--accent)"></path>
+    </svg>
+  </div>
+</header>
+
+<div class="wrap">
+<aside>
+  <nav class="chips" aria-label="Language / Язык"><a class="chip" href="#en" data-lang="en" aria-current="true">English</a><a class="chip" href="#ru" data-lang="ru">Русский</a></nav>
+  <nav class="toc" aria-label="Contents">
+    <p class="toc-title" id="toc-title">CONTENTS</p>
+    <ol id="toc"></ol>
+  </nav>
+</aside>
+<main>
+<section id="en">
+
+<p>Acceleratos does not collect or share your personal data. Everything the app records stays on your device. The app has no accounts, ads, analytics or third-party SDKs, and it does not send data over the internet.</p>
+
+<h2>WHO IS RESPONSIBLE</h2>
+<p>The developer is the person shown as the Seller on the Acceleratos App Store page (the “Developer”, “we”, “us”). For privacy questions, contact us at: [developer email].</p>
+
+<h2>DATA THE APP USES</h2>
+
+<h3>Location (GPS)</h3>
+<p>Used to measure speed during an acceleration run. The app asks for access when you first tap START and receives location only while the Run tab is open. Geographic coordinates (latitude and longitude) are not stored: run history contains only speed, signal accuracy and timestamps.</p>
+
+<h3>Motion Sensors</h3>
+<p>Accelerometer and gyroscope data are used to detect the start of a run and improve accuracy. They are stored with the run.</p>
+
+<h3>App Settings</h3>
+<p>Settings such as the interface language are stored in standard iOS settings on the device.</p>
+
+<p>The app does not access contacts, photos, camera, microphone, the advertising identifier or other device data.</p>
+
+<h2>WHERE DATA IS STORED</h2>
+<p>Run history is kept in a local database on your device. We have no access to it. It may be included in iCloud or computer backups if you have backups turned on; Apple handles those under its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</p>
+
+<h2>SHARING</h2>
+<p>We do not sell, share or disclose data to third parties, because we never receive it. The app does not track you across other apps or websites.</p>
+<p>Apple may collect anonymous usage statistics and crash reports if you chose to share them with developers in iOS settings. This is governed by Apple’s policy.</p>
+
+<h2>YOUR CHOICES</h2>
+<ol>
+  <li>Delete a single run by swiping it in History.</li>
+  <li>Deleting the app removes all of its data from the device.</li>
+  <li>Revoke location access in Settings → Privacy &amp; Security → Location Services → Acceleratos. Without it, the app works in demo mode.</li>
+</ol>
+
+<h2>CHILDREN</h2>
+<p>The app is not directed at children and does not collect data about them.</p>
+
+<h2>CHANGES</h2>
+<p>If the app starts handling data differently, we will update this page and its effective date before releasing that version.</p>
+
+<h2>CONTACT US</h2>
+<p>If you have questions about this Privacy Policy, please contact us at: [developer email].</p>
+
+</section>
+
+<hr>
+
+<section id="ru" lang="ru">
+
+<h2>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
+<p class="meta">Acceleratos · Дата вступления в силу: 27 октября 2026 г.</p>
+
+<p>Acceleratos не собирает и не передаёт ваши персональные данные. Всё, что записывает приложение, хранится только на вашем устройстве. У приложения нет аккаунтов, рекламы, аналитики и сторонних SDK, и оно не отправляет данные в интернет.</p>
+
+<h2>КТО ОТВЕЧАЕТ ЗА ПРИЛОЖЕНИЕ</h2>
+<p>Разработчик приложения — лицо, указанное в качестве продавца (Seller) на странице Acceleratos в App Store («Разработчик», «мы»). По вопросам конфиденциальности пишите нам по адресу: [email разработчика].</p>
+
+<h2>КАКИЕ ДАННЫЕ ИСПОЛЬЗУЕТ ПРИЛОЖЕНИЕ</h2>
+
+<h3>Геопозиция (GPS)</h3>
+<p>Нужна для измерения скорости при замере разгона. Приложение запрашивает доступ при первом нажатии START и получает данные только пока открыта вкладка «Замер». Географические координаты (широта и долгота) не сохраняются: в историю записываются только скорость, точность сигнала и время.</p>
+
+<h3>Датчики движения</h3>
+<p>Данные акселерометра и гироскопа используются для определения момента старта и повышения точности замера. Они сохраняются вместе с замером.</p>
+
+<h3>Настройки приложения</h3>
+<p>Настройки, например язык интерфейса, хранятся в стандартных настройках iOS на устройстве.</p>
+
+<p>Приложение не получает доступа к контактам, фото, камере, микрофону, рекламному идентификатору и другим данным устройства.</p>
+
+<h2>ГДЕ ХРАНЯТСЯ ДАННЫЕ</h2>
+<p>История замеров хранится в локальной базе данных на устройстве. У нас нет к ней доступа. Данные могут попасть в резервную копию iCloud или компьютера, если вы включили резервное копирование. Такие копии обрабатывает Apple по своей <a href="https://www.apple.com/legal/privacy/">политике конфиденциальности</a>.</p>
+
+<h2>ПЕРЕДАЧА ТРЕТЬИМ ЛИЦАМ</h2>
+<p>Мы не продаём, не передаём и не раскрываем данные третьим лицам, потому что не получаем их. Приложение не отслеживает вас в других приложениях и на сайтах.</p>
+<p>Apple может собирать обезличенную статистику и отчёты о сбоях, если вы согласились делиться ими с разработчиками в настройках iOS. Это регулируется политикой Apple.</p>
+
+<h2>КАК УПРАВЛЯТЬ ДАННЫМИ</h2>
+<ol>
+  <li>Отдельный замер можно удалить в истории свайпом.</li>
+  <li>Удаление приложения удаляет все его данные с устройства.</li>
+  <li>Доступ к геопозиции можно отозвать в «Настройки → Конфиденциальность и безопасность → Службы геолокации → Acceleratos». Без него приложение работает в демо-режиме.</li>
+</ol>
+
+<h2>ДЕТИ</h2>
+<p>Приложение не предназначено специально для детей и не собирает данные о них.</p>
+
+<h2>ИЗМЕНЕНИЯ ПОЛИТИКИ</h2>
+<p>Если приложение начнёт обрабатывать данные иначе, мы обновим эту страницу и дату вступления в силу до выхода такой версии.</p>
+
+<h2>СВЯЗЬ С НАМИ</h2>
+<p>Если у вас есть вопросы по поводу настоящей Политики, свяжитесь с нами по адресу: [email разработчика].</p>
+
+</section>
+
+</main>
+</div>
+
+<footer>
+  <span>ACCELERATOS · 2026</span>
+  <a href="#">Back to top ↑</a>
+</footer>
+
+<script>
+(function () {
+  var sections = { ru: document.getElementById('ru'), en: document.getElementById('en') };
+  var labels = { ru: 'СОДЕРЖАНИЕ', en: 'CONTENTS' };
+  var chips = document.querySelectorAll('.chip');
+  var toc = document.getElementById('toc');
+  var tocTitle = document.getElementById('toc-title');
+  var links = [];
+
+  function heads(lang) {
+    var list = Array.prototype.slice.call(sections[lang].querySelectorAll('h2'));
+    return lang === 'ru' ? list.slice(1) : list;
+  }
+  ['ru', 'en'].forEach(function (lang) {
+    heads(lang).forEach(function (h, i) { h.id = lang + '-' + (i + 1); });
+  });
+
+  function build(lang) {
+    toc.innerHTML = ''; links = [];
+    tocTitle.textContent = labels[lang];
+    heads(lang).forEach(function (h, i) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      var n = document.createElement('span'); n.textContent = String(i + 1).padStart(2, '0');
+      a.appendChild(n); a.appendChild(document.createTextNode(h.textContent));
+      li.appendChild(a); toc.appendChild(li); links.push({ a: a, h: h });
+    });
+    chips.forEach(function (c) { c.setAttribute('aria-current', c.dataset.lang === lang ? 'true' : 'false'); });
+  }
+
+  var current = 'en';
+  build(current);
+
+  function onScroll() {
+    var lang = sections.ru.getBoundingClientRect().top < window.innerHeight * 0.4 ? 'ru' : 'en';
+    if (lang !== current) { current = lang; build(lang); }
+    var active = null;
+    links.forEach(function (l) { if (l.h.getBoundingClientRect().top < 140) active = l; });
+    links.forEach(function (l) { l.a.setAttribute('aria-current', l === active ? 'true' : 'false'); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+
+</body></html>
